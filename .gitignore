@@ -1,0 +1,9 @@
+# Build output (recreate with scripts/build)
+out/
+
+# TLS keystores: server.p12 holds the PRIVATE key. Recreate with scripts/gen-keystore
+certs/*.p12
+
+# Runtime data
+data/
+exports/
