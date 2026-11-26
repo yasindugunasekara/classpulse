@@ -87,5 +87,5 @@ GUIs apply every change on the Swing Event Dispatch Thread using `SwingUtilities
 synchronised so that lines from different threads never interleave. Disconnections are detected when `readLine()`
 returns null or throws, after which the client shows a clear message and retries three times at two-second
 intervals, logging in again and re-joining the session automatically. Live poll results are drawn as a bar chart
-with Java2D.....
+with Java2D
 
