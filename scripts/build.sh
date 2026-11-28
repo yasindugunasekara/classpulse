@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# Compiles every member folder (members/*/src) plus tests/ into out/ with plain javac (no Maven/Gradle).
+# Compiles every member folder (members/*) plus tests/ into out/ with plain javac (no Maven/Gradle).
 cd "$(dirname "$0")/.." || exit 1
 rm -rf out
 mkdir -p out

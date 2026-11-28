@@ -15,7 +15,7 @@ Pure JDK (Java 17+): no Maven, Gradle or external libraries. Everything is compi
 ## 1. Team and responsibilities
 
 Each member owns one networking concept and one folder under `members/`. Each folder holds that member's
-source code (`src/`) and a `README.md` with their responsibilities, the lecture theory, the key code
+source code (one folder per Java package, e.g. `common/`, `server/`) and a `README.md` with their responsibilities, the lecture theory, the key code
 blocks, a 2-minute demo script and likely viva questions.
 
 ### Member 1: Java NIO classroom server (TCP 6000), `members/member-1-nio-server`
@@ -242,11 +242,11 @@ classpulse/
 ├── README.md, config.properties
 ├── images/           architecture diagram with port numbers
 ├── members/
-│   ├── member-1-nio-server/          README.md + src/  (common, server, server/nio, tools/LoadTestClient)
-│   ├── member-2-tcp-clients-gui/     README.md + src/  (client)
-│   ├── member-3-udp-addressing-url/  README.md + src/  (udp, addressing, tools/QuestionWebServer) + sample-questions.csv
-│   ├── member-4-multithreading-export/ README.md + src/ (engine, export)
-│   └── member-5-security/            README.md + src/  (security)
+│   ├── member-1-nio-server/          README.md + common, server, server/nio, tools/LoadTestClient
+│   ├── member-2-tcp-clients-gui/     README.md + client
+│   ├── member-3-udp-addressing-url/  README.md + udp, addressing, tools/QuestionWebServer + sample-questions.csv
+│   ├── member-4-multithreading-export/ README.md + engine, export
+│   └── member-5-security/            README.md + security
 ├── scripts/          build, gen-keystore, run-server, run-lecturer, run-student, run-question-web,
 │                     run-tests, run-smoketest, run-loadtest  (.bat for Windows, .sh for Linux/macOS)
 ├── tests/            SecurityTest, EngineConcurrencyTest, ClientTest, AddressingUrlTest, ExportCsvTest, SmokeTest

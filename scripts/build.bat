@@ -1,5 +1,5 @@
 @echo off
-REM Compiles every member folder (members\*\src) plus tests\ into out\ with plain javac.
+REM Compiles every member folder (members\*) plus tests\ into out\ with plain javac.
 setlocal enabledelayedexpansion
 cd /d "%~dp0.."
 if exist out rmdir /s /q out
