@@ -2,7 +2,7 @@
 package com.classpulse.common;
 
 /**
- * Single source of truth for the ClassPulse wire protocol (see docs/PROTOCOL.md).
+ * Single source of truth for the ClassPulse wire protocol.
  *
  * Every TCP control message is ONE line of UTF-8 text ending in '\n'.
  * Fields are separated by '|'. A free-text field (question, title, reason) is always LAST,

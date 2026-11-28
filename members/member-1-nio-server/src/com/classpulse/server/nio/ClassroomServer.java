@@ -352,7 +352,7 @@ public final class ClassroomServer implements PollManager.Listener {
     }
 
     // =====================================================================================
-    // 4. Protocol handling (see docs/PROTOCOL.md)
+    // 4. Protocol handling
     // =====================================================================================
 
     private void handleLine(ClientConnection c, String line) {

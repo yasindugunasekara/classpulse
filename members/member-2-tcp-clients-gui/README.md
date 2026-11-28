@@ -49,7 +49,7 @@ close, disconnect detection, automatic reconnect. Frontend in Swing (`SwingUtili
 
 ## 4. How my part connects to the others
 
-- **Member 1:** I speak the classroom protocol over TCP to the NIO server (`docs/PROTOCOL.md`).
+- **Member 1:** I speak the classroom protocol over TCP to the NIO server (`common/Protocol.java`).
 - **Member 5:** `LoginDialog` calls `SecureLoginClient.login/register` (TLS) to get the token.
 - **Member 3:** `StudentApp` uses `SessionScanner` (UDP) to fill the session list without typing an IP.
 - **Member 4:** the dashboard's export buttons call `ExportClient.downloadInBackground` (SwingWorker + progress bar).

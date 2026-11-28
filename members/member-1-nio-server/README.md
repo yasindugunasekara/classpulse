@@ -61,7 +61,7 @@
 - **Member 5:** `TokenStore.validate(token)` on `AUTH`; `AttendanceCodeGenerator.isValid()` on `ATTEND`; codes sent to the lecturer when the 30 s window changes (`rotateAttendanceCodes()`).
 - **Member 4:** `PollManager.createPoll/startPoll/stopPoll`, `Poll.vote()`, `AttendanceBook.open/mark`; I implement `PollManager.Listener` to receive `onPollUpdate` / `onPollEnded` from the timer threads.
 - **Member 3:** `NetworkGuard.isInClassroomSubnet()`, `registerDevice()`, `resolveHostnameAsync()`; `QuestionImporter.importAsync()` whose result comes back through `submit()`. `DiscoveryServer` reads my `SessionRegistry`.
-- **Member 2:** the clients speak my protocol (see `docs/PROTOCOL.md`).
+- **Member 2:** the clients speak my protocol (see `common/Protocol.java`).
 
 ## 5. Two-minute demo script (word for word)
 

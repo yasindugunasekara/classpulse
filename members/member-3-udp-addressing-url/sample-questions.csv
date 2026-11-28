@@ -1,0 +1,10 @@
+# ClassPulse sample questions: question,timeLimitSec,option1,option2[,option3..option6]
+# Lines starting with # are comments. Do not use commas inside a question or option.
+question,timeLimitSec,options...
+Which OSI layer does TCP work in?,30,Application,Transport,Network,Data link
+Which Java class waits for readiness on many channels at once?,30,Selector,ServerSocket,Thread,DatagramSocket
+Which protocol is connectionless?,20,TCP,UDP,TLS,HTTP
+What does setSoTimeout() prevent?,30,Blocking forever on read,Packet loss,Encryption,Port conflicts
+Why do we salt password hashes?,30,Same passwords get different hashes,Hashes become shorter,It encrypts the password,It makes login faster
+What is the prefix length of 255.255.255.0?,20,/8,/16,/24,/32
+this line is broken and will be skipped

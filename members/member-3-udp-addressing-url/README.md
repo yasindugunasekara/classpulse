@@ -19,7 +19,7 @@
   3. reverse DNS (`getHostName()`) on a pool thread for the CSV.
 - `QuestionImporter` (**URL**): validate the URL, download with `HttpURLConnection` (timeouts, size
   limit, response code, content type), parse CSV, report imported/skipped.
-- `tools/QuestionWebServer`: a tiny JDK `HttpServer` serving `docs/sample-questions.csv` for an offline demo.
+- `tools/QuestionWebServer`: a tiny JDK `HttpServer` serving `sample-questions.csv` (in this folder) for an offline demo.
 
 ## 2. The concepts in 5 sentences (lecture theory)
 

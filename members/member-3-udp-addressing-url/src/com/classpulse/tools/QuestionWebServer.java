@@ -15,7 +15,7 @@ import java.nio.file.Paths;
 import java.util.concurrent.Executors;
 
 /**
- * Serves docs/sample-questions.csv at http://<this-pc>:8080/questions.csv, so the URL import demo
+ * Serves members/member-3-udp-addressing-url/sample-questions.csv at http://<this-pc>:8080/questions.csv, so the URL import demo
  * works without internet. Uses com.sun.net.httpserver.HttpServer, which is part of the JDK.
  */
 public class QuestionWebServer {
@@ -23,7 +23,7 @@ public class QuestionWebServer {
     public static void main(String[] args) throws Exception {
         Config config = Config.load();
         int port = config.questionWebPort();
-        Path file = Paths.get(args.length > 0 ? args[0] : "docs/sample-questions.csv");
+        Path file = Paths.get(args.length > 0 ? args[0] : "members/member-3-udp-addressing-url/sample-questions.csv");
 
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/questions.csv", exchange -> {
